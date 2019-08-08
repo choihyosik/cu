@@ -194,8 +194,8 @@ input[type=checkbox]{
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 관리 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Link 1</a> <a
-								class="dropdown-item" href="#">Link 2</a> <a
+							<a class="dropdown-item" href="#">직원관리</a> <a
+								class="dropdown-item" href="#">출근기록</a> <a
 								class="dropdown-item" href="#">Link 3</a>
 						</div></li>
 					<!-- Dropdown -->
