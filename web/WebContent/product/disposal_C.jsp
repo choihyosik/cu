@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>직원 관리</title>
+<title>Insert title here</title>
 
-<script src="./js/jquery.min.js"></script>
-<link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/gnb.css">
-<script src="./js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/gnb.css">
+<script src="../js/bootstrap.min.js"></script>
 <script>
 	function showClock() {
 		var currentDate = new Date();
@@ -73,7 +73,18 @@ header {
 #barcode {
 	width: 100%;
 	padding-top: 50px;
-	text-align: center;
+	text-align: left;
+}
+/*저장 버튼 오른쪽으로 붙게하기  */
+.inner {
+	position: relative;
+}
+
+#save {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 section {
@@ -90,6 +101,22 @@ section img+img {
 	margin-left: 4%;
 }
 
+.table th {
+	width: 96px;
+}
+
+.table td {
+	width: 120px;
+}
+
+/*스크롤 기능은 있되 스크롤은 안보이게 하는 방법   해당 div 태그에는 -ms-overflow-style 을 none으로*/
+::-webkit-scrollbar {
+	display: none;
+}
+
+.container {
+	-ms-overflow-style: none;
+}
 /*
         nav {
             text-align: center;
@@ -128,7 +155,7 @@ section img+img {
 		<header>
 			<div class="inner">
 				<h2>
-					<a href="./index.jsp"><img src="./img/CU.svg" / width="100px" />편의점</a>
+					<a href="../index.jsp"><img src="../img/CU.svg" / width="100px" />편의점</a>
 				</h2>
 				<div id="info">
 					<div id="workerInfo">
@@ -151,7 +178,7 @@ section img+img {
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 발주 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="">재고 조회</a> <a
+							<a class="dropdown-item" href="../order/stock.jsp">재고 조회</a> <a
 								class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item"
 								href="#">입고 조회</a>
 						</div></li>
@@ -159,9 +186,10 @@ section img+img {
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 상품 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="./product/product.jsp">상품 조회/등록</a> <a
-								class="dropdown-item" href="./product/disposalList.jsp">폐기 조회/삭제</a> <a
-								class="dropdown-item" href="./product/registDisposalFood.jsp">폐기 등록</a>
+							<a class="dropdown-item" href="./product_CR.jsp">상품
+								조회/등록</a> <a class="dropdown-item" href="./disposal_RD.jsp">폐기
+								조회/삭제</a> <a class="dropdown-item" href="./disposal_C.jsp">폐기
+								등록</a>
 						</div></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
@@ -200,14 +228,120 @@ section img+img {
 			</div>
 		</nav>
 		<div class="inner">
+			<table class="table table-bordered" style="margin: 0;">
+				<thead>
+					<tr class="table-primary">
+						<th>대분류</th>
+						<th>중분류</th>
+						<th>상품명</th>
+						<th>수량</th>
+						<th>고유바코드</th>
+					</tr>
+				</thead>
+			</table>
+			<form action="#" method="post">
+				<div class="container"
+					style="height: 300px; overflow: auto; margin: 0; padding: 0;">
+
+					<table class="table table-bordered">
+
+						<tbody id="body">
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+							<tr>
+								<td>간편식사</td>
+								<td>삼각김밥</td>
+								<td>참치마요</td>
+								<td>1</td>
+								<td>3609031_1</td>
+							</tr>
+
+
+						</tbody>
+
+					</table>
+				</div>
+
+				<div id="save">
+					<input type="submit" class="btn btn-dark" value="저장" id="button">
+				</div>
+			</form>
 			<div id="barcode">
 				바코드 : <input type="text" name="barcode" />
 			</div>
-			<section>
-				<img src="./img/event1.jpg" alt="이벤트" width="45%" height="600px">
-				<img src="./img/event2.jpg" alt="이벤트" width="45%" height="600px">
-			</section>
 		</div>
 	</div>
+	<script>
+		document.getElementsByName("barcode")[0].focus();
+
+		$("input[type=text]").keypress(function(e) {
+
+			var barcode = $("input[name=barcode]").val();
+			var output = "<tr><td>간편식사</td><td>삼각김밥</td><td>전주비빔밥</td><td>1</td><td>";
+			if (e.keyCode == 13) {
+				console.log(barcode);
+				
+				output += barcode + "</td></tr>";
+
+				$("#body").append(output);
+
+			}
+
+		})
+	</script>
 </body>
 </html>

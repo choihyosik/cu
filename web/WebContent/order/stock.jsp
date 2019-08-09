@@ -176,10 +176,10 @@ input[type=checkbox]{
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 상품 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="../product/product.jsp">상품
+							<a class="dropdown-item" href="../product/product_CR.jsp">상품
 								조회/등록</a> <a class="dropdown-item"
-								href="../product/disposalList.jsp">폐기 조회/삭제</a> <a
-								class="dropdown-item" href="../product/registDisposalFood.jsp">폐기
+								href="../product/disposal_RD.jsp">폐기 조회/삭제</a> <a
+								class="dropdown-item" href="../product/disposal_C.jsp">폐기
 								등록</a>
 						</div></li>
 					<li class="nav-item dropdown"><a

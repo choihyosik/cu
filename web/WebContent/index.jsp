@@ -151,7 +151,7 @@ section img+img {
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 발주 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="">재고 조회</a> <a
+							<a class="dropdown-item" href="./order/stock.jsp">재고 조회</a> <a
 								class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item"
 								href="#">입고 조회</a>
 						</div></li>
@@ -159,9 +159,10 @@ section img+img {
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 상품 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="./product/product.jsp">상품 조회/등록</a> <a
-								class="dropdown-item" href="./product/disposalList.jsp">폐기 조회/삭제</a> <a
-								class="dropdown-item" href="./product/registDisposalFood.jsp">폐기 등록</a>
+							<a class="dropdown-item" href="product/product_CR.jsp">상품
+								조회/등록</a> <a class="dropdown-item" href="product/disposal_RD.jsp">폐기
+								조회/삭제</a> <a class="dropdown-item" href="product/disposal_C.jsp">폐기
+								등록</a>
 						</div></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
@@ -175,9 +176,9 @@ section img+img {
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 관리 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Link 1</a> <a
-								class="dropdown-item" href="#">Link 2</a> <a
-								class="dropdown-item" href="#">Link 3</a>
+							<a class="dropdown-item" href="./management/worker_CRUD.jsp">직원관리</a>
+							<a class="dropdown-item" href="./management/worker_History.jsp">근무일지</a>
+							
 						</div></li>
 					<!-- Dropdown -->
 					<li class="nav-item dropdown"><a

@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>출근 기록</title>
+<title>Insert title here</title>
 
-<script src="./js/jquery.min.js"></script>
-<link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/gnb.css">
-<script src="./js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/gnb.css">
+<script src="../js/bootstrap.min.js"></script>
 <script>
 	function showClock() {
 		var currentDate = new Date();
@@ -128,7 +128,7 @@ section img+img {
 		<header>
 			<div class="inner">
 				<h2>
-					<a href="./index.jsp"><img src="./img/CU.svg" / width="100px" />편의점</a>
+					<a href="../index.jsp"><img src="../img/CU.svg" / width="100px" />편의점</a>
 				</h2>
 				<div id="info">
 					<div id="workerInfo">
@@ -151,7 +151,7 @@ section img+img {
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 발주 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="">재고 조회</a> <a
+							<a class="dropdown-item" href="../order/stock.jsp">재고 조회</a> <a
 								class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item"
 								href="#">입고 조회</a>
 						</div></li>
@@ -159,9 +159,9 @@ section img+img {
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 상품 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="./product/product.jsp">상품 조회/등록</a> <a
-								class="dropdown-item" href="./product/disposalList.jsp">폐기 조회/삭제</a> <a
-								class="dropdown-item" href="./product/registDisposalFood.jsp">폐기 등록</a>
+							<a class="dropdown-item" href="./product_CR.jsp">상품 조회/등록</a> <a
+								class="dropdown-item" href="./disposal_RD.jsp">폐기 조회/삭제</a> <a
+								class="dropdown-item" href="./disposal_C.jsp">폐기 등록</a>
 						</div></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
@@ -200,13 +200,39 @@ section img+img {
 			</div>
 		</nav>
 		<div class="inner">
-			<div id="barcode">
-				바코드 : <input type="text" name="barcode" />
-			</div>
-			<section>
-				<img src="./img/event1.jpg" alt="이벤트" width="45%" height="600px">
-				<img src="./img/event2.jpg" alt="이벤트" width="45%" height="600px">
-			</section>
+			    폐기일자 <input type="date" /><hr/>
+    <table class="table table-hover" >
+        <tr class="table-primary">
+            <td>대분류</td>
+            <td>중분류</td>
+            <td>상품코드</td>
+            <td>삼품명</td>
+            <td>폐기수량</td>
+            <td>폐기날짜시간</td>
+        </tr>
+        <tr>
+            <td>음료수</td>
+            <td>주류</td>
+            <td>1232414</td>
+            <td>참이슬</td>
+            <td>4</td>
+            <td>2019.07.28</td>
+        </tr>
+        <tr>
+            <td>음료수</td>
+            <td>주류</td>
+            <td>1232414</td>
+            <td>참이슬</td>
+            <td>4</td>
+            <td>2019.07.28</td>
+        </tr>
+        <tr>
+                <td colspan="4">합 계</td>
+                <td>8</td>
+                <td></td>
+            </tr>
+    </table>
+			
 		</div>
 	</div>
 </body>
