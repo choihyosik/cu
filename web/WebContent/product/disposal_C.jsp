@@ -1,16 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD:web/WebContent/product/disposal_C.jsp
 <title>Insert title here</title>
+=======
+<title>근무 일지</title>
+>>>>>>> 82e22308e32bc3de6863097edb25c644f3594df8:web/WebContent/management/worker_History.jsp
 
 <script src="../js/jquery.min.js"></script>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/gnb.css">
 <script src="../js/bootstrap.min.js"></script>
 <script>
+	$(document).ready(function() {
+		console.log(currentDate());
+	});
 	function showClock() {
 		var currentDate = new Date();
 		var outputClock = $("#currenDate");
@@ -46,6 +52,16 @@
 		outputClock.text(msg);
 		setTimeout(showClock, 1000);
 	}
+	
+	function currentDate() {
+		var today = new Date();
+		var output = today.getFullYear() + "-";
+		output += "0" + (today.getMonth() + 1) + "-";
+		output += "0" + today.getDate();
+		console.log(output);
+		return output;
+	}
+	
 </script>
 <style>
 body {
@@ -172,12 +188,12 @@ section img+img {
 			</div>
 		</header>
 		<nav class="navbar navbar-expand-sm">
-			<div class="inner">
+			<<div class="inner">
 				<ul class="navbar-nav">
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"> 발주 </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 발주 </a>
 						<div class="dropdown-menu">
+<<<<<<< HEAD:web/WebContent/product/disposal_C.jsp
 							<a class="dropdown-item" href="../order/stock.jsp">재고 조회</a> <a
 								class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item"
 								href="#">입고 조회</a>
@@ -194,40 +210,57 @@ section img+img {
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 결제 </a>
+=======
+							<a class="dropdown-item" href="">재고 조회</a>
+							<a class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item" href="#">입고 조회</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 상품 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Link 1</a> <a
-								class="dropdown-item" href="#">Link 2</a> <a
-								class="dropdown-item" href="#">Link 3</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"> 관리 </a>
+							<a class="dropdown-item" href="../product/product.jsp">상품조회/등록</a>
+							<a class="dropdown-item" href="../product/disposalList.jsp">폐기조회/삭제</a>
+							<a class="dropdown-item" href="../product/registDisposalFood.jsp">폐기 등록</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 결제 </a>
+>>>>>>> 82e22308e32bc3de6863097edb25c644f3594df8:web/WebContent/management/worker_History.jsp
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Link 1</a> <a
-								class="dropdown-item" href="#">Link 2</a> <a
-								class="dropdown-item" href="#">Link 3</a>
-						</div></li>
+							<a class="dropdown-item" href="#">Link 1</a>
+							<a class="dropdown-item" href="#">Link 2</a>
+							<a class="dropdown-item" href="#">Link 3</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 관리 </a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="./worker_CRUD.jsp">직원 관리</a>
+							<a class="dropdown-item" href="./worker_History.jsp">근무 일지</a>
+						</div>
+					</li>
 					<!-- Dropdown -->
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"> 매출 </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 매출 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Link 1</a> <a
-								class="dropdown-item" href="#">Link 2</a> <a
-								class="dropdown-item" href="#">Link 3</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"> 영수증 </a>
+							<a class="dropdown-item" href="#">Link 1</a>
+							<a class="dropdown-item" href="#">Link 2</a>
+							<a class="dropdown-item" href="#">Link 3</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 영수증 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Link 1</a> <a
-								class="dropdown-item" href="#">Link 2</a> <a
-								class="dropdown-item" href="#">Link 3</a>
-						</div></li>
+							<a class="dropdown-item" href="#">Link 1</a>
+							<a class="dropdown-item" href="#">Link 2</a>
+							<a class="dropdown-item" href="#">Link 3</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</nav>
 		<div class="inner">
+<<<<<<< HEAD:web/WebContent/product/disposal_C.jsp
 			<table class="table table-bordered" style="margin: 0;">
 				<thead>
 					<tr class="table-primary">
@@ -323,6 +356,32 @@ section img+img {
 			<div id="barcode">
 				바코드 : <input type="text" name="barcode" />
 			</div>
+=======
+			일자 : <input type="date" value="return currentDate();"/>
+			<!-- 오늘 날짜 기준 최신 순으로 출력하되 날짜순으로 다른 일자도 조회할 수 있게 한다.. -->
+			<table class="table table-hover">
+				<thead>
+					<tr class="table-primary">
+						<th>근무자</th>
+						<th>출근시간</th>
+						<th>퇴근시간</th>
+						<th>근무시간</th>
+						<th>일급</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>최진민</td>
+						<td>19/08/07 20:00</td>
+						<td>19/08/07 22:30</td>
+						<td>2시30분</td>
+						<td>21250</td><!-- 8500 * 2.5 -->
+					</tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+>>>>>>> 82e22308e32bc3de6863097edb25c644f3594df8:web/WebContent/management/worker_History.jsp
 		</div>
 	</div>
 	<script>
