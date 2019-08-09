@@ -5,14 +5,18 @@
 <meta charset="UTF-8">
 <title>근무 일지</title>
 
-<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/tablesorter.js" ></script>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/gnb.css">
-<script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../css/tablesorter.css">
 <script>
 	$(document).ready(function() {
-		console.log(currentDate());
+		$("#date").val(currentDate());
+		$("#history").tablesorter();
 	});
+	
 	function showClock() {
 		var currentDate = new Date();
 		var outputClock = $("#currenDate");
@@ -49,12 +53,12 @@
 		setTimeout(showClock, 1000);
 	}
 	
+	// 현재 날짜(yyyy-mm-dd) 출력
 	function currentDate() {
 		var today = new Date();
 		var output = today.getFullYear() + "-";
 		output += "0" + (today.getMonth() + 1) + "-";
 		output += "0" + today.getDate();
-		console.log(output);
 		return output;
 	}
 	
@@ -209,10 +213,10 @@ section img+img {
 				</ul>
 			</div>
 		</nav>
-		<div class="inner">
-			일자 : <input type="date" value="return currentDate();"/>
+		<div class="inner"><!-- table table-hover  -->
+			일자 : <input type="date" id="date"/>
 			<!-- 오늘 날짜 기준 최신 순으로 출력하되 날짜순으로 다른 일자도 조회할 수 있게 한다.. -->
-			<table class="table table-hover">
+			<table id="history" class="table table-hover tablesorter">
 				<thead>
 					<tr class="table-primary">
 						<th>근무자</th>
@@ -229,6 +233,13 @@ section img+img {
 						<td>19/08/07 22:30</td>
 						<td>2시30분</td>
 						<td>21250</td><!-- 8500 * 2.5 -->
+					</tr>
+					<tr>
+						<td>가</td>
+						<td>19/08/07 18:00</td>
+						<td>19/08/07 23:30</td>
+						<td>5시30분</td>
+						<td>5000</td><!-- 8500 * 2.5 -->
 					</tr>
 				</tbody>
 				<tfoot>
