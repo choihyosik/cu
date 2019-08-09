@@ -7,11 +7,20 @@
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/dataTables.min.js"></script>
 <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-<link rel="stylesheet" href="../css/dataTables.min.css"/>
 <link rel="stylesheet" href="../css/gnb.css"/>
 <script>
+	$(document).ready(function() {
+		$('tr:odd').click(function (){
+			if($(this).next().css("display") == "none") {
+				$(this).next().css("display", "table-row");
+			} else {
+				$(this).next().css("display", "none");
+			}
+		});
+		
+			
+	});
 	function showClock() {
 		var currentDate = new Date();
 		var outputClock = $("#currenDate");
@@ -91,36 +100,11 @@ section img+img {
 	margin-left: 4%;
 }
 
-/*
-        nav {
-            text-align: center;
-            background: rgb(147, 103, 189);
-            border: 2px solid green;
-            border-radius: 15px;
-        }
+tbody tr:nth-child(even) {
+	display : none;
+	
+}
 
-        nav>button {
-            margin: 5%;
-            width: 30%;
-            font-size: 60px;
-
-        }
-
-        a:link {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: greenyellow;
-            text-decoration: none;
-        }
-*/
 </style>
 </head>
 
@@ -205,7 +189,6 @@ section img+img {
 						<th>이름</th>
 						<th>아이디</th>
 						<th>시급</th>
-						<th></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -213,7 +196,49 @@ section img+img {
 						<td>알바생</td>
 						<td>편돌이</td>
 						<td>8350</td>
-						<td><input type="button" value="수정"/><input type="button" value="삭제"/></td>
+					</tr>
+					<tr>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input class="btn" type="button" value="수정"/></td>
+						<td><input class="btn" type="button" value="삭제"/></td>
+					</tr>
+					<tr>
+						<td>알바생</td>
+						<td>편돌이</td>
+						<td>8350</td>
+					</tr>
+					<tr>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input class="btn" type="button" value="수정"/></td>
+						<td><input class="btn" type="button" value="삭제"/></td>
+					</tr>
+					<tr>
+						<td>알바생</td>
+						<td>편돌이</td>
+						<td>8350</td>
+					</tr>
+					<tr>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input class="btn" type="button" value="수정"/></td>
+						<td><input class="btn" type="button" value="삭제"/></td>
+					</tr>
+					<tr>
+						<td>dasd</td>
+						<td>편돌이</td>
+						<td>8350</td>
+					</tr>
+					<tr>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input type="text" value=""/></td>
+						<td><input class="btn" type="button" value="수정"/></td>
+						<td><input class="btn" type="button" value="삭제"/></td>
 					</tr>
 				</tbody>
 				<tfoot></tfoot>

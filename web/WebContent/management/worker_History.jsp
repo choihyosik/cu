@@ -3,11 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD:web/WebContent/product/disposal_C.jsp
-<title>Insert title here</title>
-=======
 <title>근무 일지</title>
->>>>>>> 82e22308e32bc3de6863097edb25c644f3594df8:web/WebContent/management/worker_History.jsp
 
 <script src="../js/jquery.min.js" type="text/javascript"></script>
 <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -93,18 +89,7 @@ header {
 #barcode {
 	width: 100%;
 	padding-top: 50px;
-	text-align: left;
-}
-/*저장 버튼 오른쪽으로 붙게하기  */
-.inner {
-	position: relative;
-}
-
-#save {
-	display: inline-block;
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	text-align: center;
 }
 
 section {
@@ -121,22 +106,6 @@ section img+img {
 	margin-left: 4%;
 }
 
-.table th {
-	width: 96px;
-}
-
-.table td {
-	width: 120px;
-}
-
-/*스크롤 기능은 있되 스크롤은 안보이게 하는 방법   해당 div 태그에는 -ms-overflow-style 을 none으로*/
-::-webkit-scrollbar {
-	display: none;
-}
-
-.container {
-	-ms-overflow-style: none;
-}
 /*
         nav {
             text-align: center;
@@ -197,24 +166,6 @@ section img+img {
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 발주 </a>
 						<div class="dropdown-menu">
-<<<<<<< HEAD:web/WebContent/product/disposal_C.jsp
-							<a class="dropdown-item" href="../order/stock.jsp">재고 조회</a> <a
-								class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item"
-								href="#">입고 조회</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"> 상품 </a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="./product_CR.jsp">상품
-								조회/등록</a> <a class="dropdown-item" href="./disposal_RD.jsp">폐기
-								조회/삭제</a> <a class="dropdown-item" href="./disposal_C.jsp">폐기
-								등록</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"> 결제 </a>
-=======
 							<a class="dropdown-item" href="">재고 조회</a>
 							<a class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item" href="#">입고 조회</a>
 						</div>
@@ -229,7 +180,6 @@ section img+img {
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 결제 </a>
->>>>>>> 82e22308e32bc3de6863097edb25c644f3594df8:web/WebContent/management/worker_History.jsp
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="#">Link 1</a>
 							<a class="dropdown-item" href="#">Link 2</a>
@@ -263,110 +213,8 @@ section img+img {
 				</ul>
 			</div>
 		</nav>
-<<<<<<< HEAD:web/WebContent/management/worker_History.jsp
 		<div class="inner"><!-- table table-hover  -->
 			일자 : <input type="date" id="date"/>
-=======
-		<div class="inner">
-<<<<<<< HEAD:web/WebContent/product/disposal_C.jsp
-			<table class="table table-bordered" style="margin: 0;">
-				<thead>
-					<tr class="table-primary">
-						<th>대분류</th>
-						<th>중분류</th>
-						<th>상품명</th>
-						<th>수량</th>
-						<th>고유바코드</th>
-					</tr>
-				</thead>
-			</table>
-			<form action="#" method="post">
-				<div class="container"
-					style="height: 300px; overflow: auto; margin: 0; padding: 0;">
-
-					<table class="table table-bordered">
-
-						<tbody id="body">
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-							<tr>
-								<td>간편식사</td>
-								<td>삼각김밥</td>
-								<td>참치마요</td>
-								<td>1</td>
-								<td>3609031_1</td>
-							</tr>
-
-
-						</tbody>
-
-					</table>
-				</div>
-
-				<div id="save">
-					<input type="submit" class="btn btn-dark" value="저장" id="button">
-				</div>
-			</form>
-			<div id="barcode">
-				바코드 : <input type="text" name="barcode" />
-			</div>
-=======
-			일자 : <input type="date" value="return currentDate();"/>
->>>>>>> 8acf36ebf92c3819ad3a59fc5e31b54e6ef218e5:web/WebContent/product/disposal_C.jsp
 			<!-- 오늘 날짜 기준 최신 순으로 출력하되 날짜순으로 다른 일자도 조회할 수 있게 한다.. -->
 			<table id="history" class="table table-hover tablesorter">
 				<thead>
@@ -397,26 +245,7 @@ section img+img {
 				<tfoot>
 				</tfoot>
 			</table>
->>>>>>> 82e22308e32bc3de6863097edb25c644f3594df8:web/WebContent/management/worker_History.jsp
 		</div>
 	</div>
-	<script>
-		document.getElementsByName("barcode")[0].focus();
-
-		$("input[type=text]").keypress(function(e) {
-
-			var barcode = $("input[name=barcode]").val();
-			var output = "<tr><td>간편식사</td><td>삼각김밥</td><td>전주비빔밥</td><td>1</td><td>";
-			if (e.keyCode == 13) {
-				console.log(barcode);
-				
-				output += barcode + "</td></tr>";
-
-				$("#body").append(output);
-
-			}
-
-		})
-	</script>
 </body>
 </html>
