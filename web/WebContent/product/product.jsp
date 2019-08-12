@@ -126,7 +126,7 @@ height: 50px;
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 발주 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="../order/stock.jsp">재고 조회</a> <a
+							<a class="dropdown-item" href="">재고 조회</a> <a
 								class="dropdown-item" href="">발주 조회</a> <a class="dropdown-item"
 								href="#">입고 조회</a>
 						</div></li>
@@ -134,9 +134,9 @@ height: 50px;
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 상품 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="product_CR.jsp">상품 조회/등록</a> <a
-								class="dropdown-item" href="disposal_RD.jsp">폐기 조회/삭제</a> <a
-								class="dropdown-item" href="disposal_C.jsp">폐기 등록</a>
+							<a class="dropdown-item" href="./product.jsp">상품 조회/등록</a> <a
+								class="dropdown-item" href="./disposalList.jsp">폐기 조회/삭제</a> <a
+								class="dropdown-item" href="./registDisposalFood.jsp">폐기 등록</a>
 						</div></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
@@ -377,7 +377,11 @@ height: 50px;
 
 		}
 
-		
+		else {
+			$("#barcode").hide();
+			$("#product").hide();
+
+		}
 
 	})	
 	
