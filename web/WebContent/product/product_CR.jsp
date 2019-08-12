@@ -134,9 +134,11 @@ height: 50px;
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> 상품 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="product_CR.jsp">상품 조회/등록</a> <a
-								class="dropdown-item" href="disposal_RD.jsp">폐기 조회/삭제</a> <a
-								class="dropdown-item" href="disposal_C.jsp">폐기 등록</a>
+							<a class="dropdown-item" href="product_CR.jsp">상품조회/등록</a>
+							<a class="dropdown-item" href="product_UD.jsp">상품 수정/삭제</a>
+							<a class="dropdown-item" href="category_CD.jsp">카테고리 등록/삭제</a> 
+							<a class="dropdown-item" href="disposal_RD.jsp">폐기조회/삭제</a> 
+							<a class="dropdown-item" href="disposal_C.jsp">폐기 등록</a>
 						</div></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
@@ -319,19 +321,38 @@ height: 50px;
 										 name="price" /></td>
 								</tr>
 								<tr>
-									<td>분류 정보(대):</td>
+									<td>상품 정보:</td>
 									<td><input type="text" class="form-control"
-										 name="big" /></td>
+										 name="info" /></td>
+								</tr>
+								<tr>
+									<td>분류 정보(대):</td>
+									<td>
+										<select>
+											<option>대분류1</option>
+											<option>대분류2</option>
+											<option>대분류3</option>
+											<option>대분류4</option>
+											<option>대분류5</option>
+										</select>
+									</td>
 								</tr>
 								<tr>
 									<td>분류 정보(중):</td>
-									<td><input type="text" class="form-control"
-										 name="middle" /></td>
+									<td>
+										<select>
+											<option>중분류1</option>
+											<option>중분류2</option>
+											<option>중분류3</option>
+											<option>중분류4</option>
+											<option>중분류5</option>
+										</select>
+									</td>
 								</tr>
 								<tr>
-									<td>재고</td>
-									<td><input type="number" class="form-control"
-										 name="stock" /></td>
+									<td>이미지:</td>
+									<td><input type="file" class="form-control"
+										 name="img" /></td>
 								</tr>
 								<tr>
 									<td>미성년자 판매 여부:</td>
