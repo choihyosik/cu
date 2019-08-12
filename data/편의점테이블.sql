@@ -11,7 +11,7 @@ create table Worker (
 
 -- 직원 출근 이력 테이블
 create table WorkerLog (
-	no int(8) primary key,
+	no int(8) primary key auto_increment,
 	id nvarchar(10) references Worker(id),
 	startWork datetime default current_timestamp,
 	endWork datetime,
