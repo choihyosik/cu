@@ -1,5 +1,5 @@
 -- 회원가입
-insert into worker(id, pwd, name, payHour, isadmin) values('cjm', '1234', 'choi', 8350, default);
+insert into worker(id, pwd, name, payHour, isadmin) values('cjm', SHA2('1234', 256), 'choi', 8350, default);
 
 
 -- 로그인(출근)
@@ -10,7 +10,7 @@ CREATE PROCEDURE login (
     out result boolean
 )
 BEGIN
-    IF (EXISTS (SELECT * FROM worker WHERE id = uid and pwd = upwd)) THEN 
+    IF (EXISTS (SELECT * FROM worker WHERE id = uid and pwd = SHA2(upwd, 256))) THEN 
       insert into workerlog(id) values(uid);
       set result = true;
    else
